@@ -7,3 +7,13 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+clothing = Category.find_or_create_by!(name: "Clothing")
+accessories = Category.find_or_create_by!(name: "Accessories")
+
+tshirt = Product.find_or_create_by!(name: "T-shirt", price: 20, stock: 40, category: clothing)
+jeans = Product.find_or_create_by!(name: "Jeans", price: 45, stock: 50, category: clothing)
+watch = Product.find_or_create_by!(name: "Watch", price: 100, stock: 5, category: accessories)
+hat = Product.find_or_create_by!(name: "Hat", price: 25, stock: 12, category: accessories)
+
+Review.find_or_create_by!(name: "John Smith", stars: 4, comment: "This is the best T-shirt", product: tshirt)
