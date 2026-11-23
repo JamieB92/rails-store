@@ -59,10 +59,3 @@ The database is a local SQLite file in `storage/`, which is not committed. Each 
 GitHub Actions runs on every pull request: `scan_ruby` (Brakeman and bundler-audit), `scan_js`, `lint`, `test` and `system-test`. Dependabot opens pull requests for dependency updates.
 
 When changing the Ruby version, update `.ruby-version`, `.tool-versions` and the `RUBY_VERSION` in the `Dockerfile` together.
-
-## Status and next steps
-
-- [ ] Product form: category dropdown, price and stock fields, and showing validation errors
-- [ ] Show reviews on the product page
-- [ ] Write tests (the generated fixtures still need updating)
-- [ ] Deploy to Render
